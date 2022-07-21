@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.5625vw;
+    font-family: "Microsoft Yahei";
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.page1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 88, 88);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+.page1 h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-style: normal;
+    color: #fff;
+    margin-top: 28%;
+}
+
+.cake {
+    width: 83%;
+    height: 34%;
+    position: absolute;
+    bottom: 34%;
+    left: 9%;
+    right: 0%;
+    overflow: hidden;
+    background-color: rgb(255, 88, 88);
+}
+
+#cake {
+    display: block;
+    position: relative;
+    margin: -51em auto 0 auto;
+    width: 100%;
+    height: 200%;
+}
+
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.6px;
+    width: 6.66666667px;
+    height: 18px;
+}
+
+.fuego:nth-child(1) {
+    -webkit-animation: fuego 2s 5.5s infinite;
+    animation: fuego 2s 5.5s infinite;
+}
+
+.fuego:nth-child(2) {
+    -webkit-animation: fuego 1.5s 5.5s infinite;
+    animation: fuego 1.5s 5.5s infinite;
+}
+
+.fuego:nth-child(3) {
+    -webkit-animation: fuego 1s 5.5s infinite;
+    animation: fuego 1s 5.5s infinite;
+}
+
+.fuego:nth-child(4) {
+    -webkit-animation: fuego 0.5s 5.5s infinite;
+    animation: fuego 0.5s 5.5s infinite;
+}
+
+.fuego:nth-child(5) {
+    -webkit-animation: fuego 0.2s 5.5s infinite;
+    animation: fuego 0.2s 5.5s infinite;
+}
+
+/* 蜡烛 */
+.velas {
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 121px;
+    left: 50%;
+    margin-left: -2.4px;
+    margin-top: -8.33333333px;
+    width: 6px;
+    height: 47px;
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: in 500ms 5s ease-out forwards;
+    animation: in 500ms 5s ease-out forwards;
+}
+
+.velas:after,
+.velas:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+}
+
+.velas:after {
+    top: 25%;
+    left: 0;
+}
+
+.velas:before {
+    top: 45%;
+    left: 0;
+}
+
+/* ============================================== Fire
+  */
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.6px;
+    width: 6.66666667px;
+    height: 18px;
+}
+
+.fuego:nth-child(1) {
+    -webkit-animation: fuego 2s 5.5s infinite;
+    animation: fuego 2s 5.5s infinite;
+}
+
+.fuego:nth-child(2) {
+    -webkit-animation: fuego 1.5s 5.5s infinite;
+    animation: fuego 1.5s 5.5s infinite;
+}
+
+.fuego:nth-child(3) {
+    -webkit-animation: fuego 1s 5.5s infinite;
+    animation: fuego 1s 5.5s infinite;
+}
+
+.fuego:nth-child(4) {
+    -webkit-animation: fuego 0.5s 5.5s infinite;
+    animation: fuego 0.5s 5.5s infinite;
+}
+
+.fuego:nth-child(5) {
+    -webkit-animation: fuego 0.2s 5.5s infinite;
+    animation: fuego 0.2s 5.5s infinite;
+}
+
+/* ============================================== Animation Fire
+  */
+@-webkit-keyframes fuego {
+
+    0%,
+    100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+@keyframes fuego {
+
+    0%,
+    100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+@-webkit-keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* music */
+.music {
+    z-index: 5;
+    position: fixed;
+    top: 3vh;
+    right: 4vw;
+    width: 15vw;
+    height: 15vw;
+    border: 4px solid #ef1639;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.music>img:first-of-type {
+    position: absolute;
+    top: 24%;
+    right: 2.5%;
+    width: 28.421%;
+    z-index: 1;
+}
+
+.music>img:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 79%;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.music>img.play {
+    -webkit-animation: music_disc 4s linear infinite;
+    animation: music_disc 4s linear infinite;
+}
+
+@-webkit-keyframes music_disc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes music_disc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 33px;
+    height: 18px;
+    margin-left: -16px;
+    background: url(../imgs/arrow.png) no-repeat;
+    background-size: 33px auto;
+    opacity: 0;
+}
+
+.arrow-h {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 33px;
+    height: 18px;
+    margin-top: -9px;
+    opacity: 0;
+}
+
+.arrow-h i {
+    display: block;
+    width: 33px;
+    height: 18px;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: 33px auto;
+    -webkit-transform: rotate(-90deg);
+}
+
+.current .arrow {
+    -webkit-animation: swipeMoveTop 1.5s 1s ease infinite;
+}
+
+.current .arrow-h {
+    -webkit-animation: swipeMoveLeft 1.5s 1s ease infinite;
+}
+
+/*上滑提示*/
+@-webkit-keyframes swipeMoveTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10px, 0);
+    }
+
+    70% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -10px, 0);
+    }
+}
+
+/*左滑提示*/
+@-webkit-keyframes swipeMoveLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(10px, 0, 0);
+    }
+
+    70% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10px, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideToTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
